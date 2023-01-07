@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+footer {background-color: #f7f7f7;}
+.footer {position: relative; max-width:1180px; margin:auto; padding: 50px 20px 2.628% 20px;}
+.footer ul , .footer li {list-style-type:none; margin: 0; padding: 0;}
+.footer ul {width: 100%; color: #666666;}
+.footer > ul {display: flex; flex-wrap: wrap;}
+.footer > ul > li:nth-child(1) {width: 50%; padding-right: 20px;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(1) {line-height: 0; font-size: 0; margin-bottom: 13px; cursor:pointer; width: 195px;}
+.footer > ul > li:nth-child(1) > ul > li:hover:nth-child(1) img {transform: scale(1.05, 1.05); transition: all 0.5s ease 0s;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(1) img {transform: scale(1, 1); transition: all 0.5s ease 0s;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(2) {margin-bottom: 18px;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(2) h5 {font-weight: bold;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(3) {padding: 7px 0 7px 30px; line-height: 150%; background: url("../images/icon_03a.png") no-repeat 0px 8px;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(4) {padding: 7px 0 7px 30px; line-height: 150%; background: url("../images/icon_03b.png") no-repeat 0px 8px;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(5) {padding: 7px 0 7px 30px; line-height: 150%; background: url("../images/icon_03c.png") no-repeat 0px 8px;}
+.footer > ul > li:nth-child(1) > ul > li:nth-child(6) {padding: 7px 0 7px 30px; line-height: 150%; background: url("../images/icon_03d.png") no-repeat 0px 8px;}
+.footer > ul > li:nth-child(2) {width: 24.55%; padding-right: 20px;}
+.footer > ul > li:nth-child(2) > ul > li {line-height: 200%;}
+.footer > ul > li:nth-child(3) {width: 25.45%;}
+.footer > ul > li:nth-child(3) > ul > li {line-height: 120%; padding: 6px 0;}
+.footerA, .footerB {margin: 10px 0 33px 0; position: relative;}
+.footerA h5, .footerB h5 { font-size: 1.8rem; color: #bb1b21; font-weight: bold;}
+
+.footer ul a:link, .footer ul a:visited {text-decoration:none; color:#666666; position: relative; transition: all 0.25s ease 0s;}
+.footer ul a:active, .footer ul a:hover {text-decoration:none; color:#b51c1c; cursor:pointer; transition: all 0.25s ease 0s;}
+.footer ul a::after {content: ''; height: 2px; width: 100%; background-color: #fff; position: absolute; bottom: 20px; left: 0px; transition: all 0.25s ease 0s;}
+.footer ul a:hover::after {content: ''; height: 2px; width: 100%; background-color: #b51c1c; position: absolute; bottom: -3px; left: 0px;}
+
+.copyright {color: #ead6d7; background-color: #bb1b21; text-align: center; padding: 27px 20px;}
+
+@media only screen and (min-width:577px){
+    .footer > ul > li:nth-child(2) > ul, .footer > ul > li:nth-child(3) > ul {display: block!important;}
+}
+
+@media only screen and (max-width:576px){
+    .footerA, .footerB {margin: 10px 0; cursor: pointer;}
+    .footerA::after, .footerB::after {content: ''; position: absolute; top: 6px; right: 0px; border-color: transparent #bb1b21 transparent transparent; border-style: solid solid solid solid; border-width: 7px 10px; line-height: 0; font-size: 0;}
+    .open_F::after {content: ''; position: absolute; top: 8px; right: 0px; border-color: #bb1b21 transparent transparent transparent; border-style: solid solid solid solid; border-width: 10px 7px; line-height: 0; font-size: 0;}
+    .open_F {color: #bb1b21;}
+    .footer > ul > li:nth-child(1) {width: 100%; max-width: 450px; padding: 0 0 2.628% 0; margin: auto;}
+    .footer > ul > li:nth-child(2), .footer > ul > li:nth-child(3) {width: 100%; max-width: 450px; margin: auto; padding: 2.628% 0 0 0;}
+    .footer > ul > li:nth-child(2) > ul, .footer > ul > li:nth-child(3) > ul {max-height: 0; overflow: hidden; transition: all 0.5s ease 0s;}
+    .footer > ul > li:nth-child(2) > ul.active {max-height:200px; transition: all 0.5s ease 0s;}
+    .footer > ul > li:nth-child(3) > ul.active {max-height:400px; transition: all 0.5s ease 0s;}
+    .footer > ul > li:nth-child(2) > ul, .footer > ul > li:nth-child(3) > ul {display: flex; flex-wrap: wrap;}
+    .footer > ul > li:nth-child(2) > ul > li, .footer > ul > li:nth-child(3) > ul > li {width: 50%;}
+}
+
+@media only screen and (max-width:480px){
+    .footer > ul > li:nth-child(3) > ul > li {width: 100%;}
+}
